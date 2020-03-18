@@ -6,7 +6,7 @@
 int main(int argc, char* argv[])
 {
 
-	CsvTable t(argv[1], ',');
+	CsvTable t(argv[1]);
 	t.evaluate();
 	t.write(std::cout);
 	return 0;

@@ -14,9 +14,9 @@ class CsvTable {
 public:
 	const char delim;
 
-	CsvTable(std::istream& instream, const char delim);
+	CsvTable(std::istream& instream, const char delim = ',');
 
-	CsvTable(std::string fileName, const char delim);
+	CsvTable(std::string fileName, const char delim = ',');
 
 	void evaluate();
 
